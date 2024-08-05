@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=l.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Icon -->
+    <link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Asssets/css/style.css" >
+    <link rel="stylesheet" href="Asssets/css/footter.css">
+    <style>
+      main{
+        background-color:rgba(42, 12, 70, 0.341);
+        
+      }
+      .header-m{
+       padding-top:100px;
+        font-size: 50px;
+       text-align: center;
+      }
+      .header-m{
+        
+        animation: moveRight 2s linear forwards;
+      }
+      @keyframes moveRight {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
+      
+      .intro-m{
+        padding: 50px 30px 10px 30px;
+        font-size: 130%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        
+      }
+      main{
+        height: 1500%;                                                 /* IMP*/
+      }
+      .container {
+        display: flex; /* display the divs as a flex container */
+        height: 1500%;                                                 /* IMP*/
+       
+        margin-bottom: 0px;
+    }
+    .header-h{
+        background-color:rgb(126, 43, 204) ;
+        border-top: 150px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .left-p {
+      font-size: 18px;
+       width: 15%; /* width of230% */
+       background-color: purple;
+       margin-bottom: 0;            
+   }
+    
+    .right-p {
+
+      font-size: 125%;
+      margin-bottom: 0;
+      width: 85%; /* width of 80% */
+      background-color:rgba(42, 12, 70, 0.341);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;                                                   /* IMP*/
+  }
+    #first{
+        color: rgb(79, 3, 79);
+        font-size: 10px;
+    }
+    .title{
+      color: purple;
+      padding-top: 20px;
+      padding-left: 40px;
+      font-size: 28px;
+      font-weight: 20px;
+  }
+   
+    #co{
+        font-size: 130%;
+        padding-left: 35%;
+
+    } 
+    .dev{
+        color: red;
+        font-size: 22px;
+    }
+    </style>
+
+    <title>LearnMe/CSS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+         <h2 style="display: inline-block; vertical-align: middle;">LearnMe</h2>
+      </div>
+      <ul id="ul">
+        <li id="l" ><a href="index.html">Home</a></li>
+        <li id="l" ><a  href="HTML.html">HTML</a></li>
+        <li id="l" ><a id="first" href="CSS.html">CSS</a></li>
+        <li id="l"><a href="JS.html">JS</a></li>
+        <li id="l"><a href="JS.html">PhP</a></li>
+        <li id="l"><a href="Aboutme.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="paragraph">
+        <div class="header-h">Cascading Style Sheets (CSS)</div>
+              <div class="container">
+                <div class="left-p">
+                <ul>
+                   <span id="co">Content</span>
+                   <li>~ Introduction</li><br>
+                   <li>~ Inline CSS</li><br>
+                   <li>~ Internal CSS</li><br>
+                   
+                   <li>~ External CSS</li><br>
+                 
+                </ul> 
+            </div>
+
+                <div class="right-p"> 
+                  <div class="title">Introduction</div>
+                    	CSS stand for cascading Style sheet which is used to format the layout of the web page. With CSS, you can control the color, size of the text, font, margin between the elements, padding, position, background image or colors and different display for different devices, screen size and much more. CSS can be applied to HTML file in three different ways: <br>
+1) Inline <br>
+2) Internal CSS<br>
+3) External CSS<br>
+<div class="title">• Inline CSS</div>
+ Inline CSS is applied to the HTML element within the same line by using style attribute. <br>
+Syntax:<br>
+<'element style = “...style rules....”>…………...<'/element style><br>
+Example:<br>
+<'h1= “color: red;” >This is red heading <'/h1><br>
+
+<div class="title">•Internal CSS</div>
+Internal CSS is applied to the html document by using a <'style> element with in <'head> section. Internal CSS is use to define a style for single HTML page.<br>
+Syntax:<br>
+<'style>
+Tag{attribute:value;attribute:value;….}
+……….
+<'/style><br>
+Example:<br>
+<img src="Asssets/img/code4.png" alt="" srcset="" width="40%">
+<div class="title">•External CSS</div>
+ External CSS is applied to the HTML document by using <link> element (which links the HTML document with CSS document). External CSS is used when there are many web pages.<br>
+Syntax:<br>
+<head><br>
+<'link rel=” stylesheet” type=”text/css” href=” mystyle.css”><br>
+<'/head><br>
+Example:<br>
+              Home.html<br>
+          <img src="Asssets/img/code5.png" alt="" srcset="" width="40%">
+     <br>style.css<br>
+     <img src="Asssets/img/code6.png" alt="" srcset="" width="40%">
+
+
+                  
+       <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
+
+                </div>
+              </div>
+      </div>
+    </main>
+
+
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+      
+        <h3>Learn me</h3>
+      
+         <p>
+            Hi , I am Shankar Aryal computer science student this is simple demonstration of website where you can know about me ,check some simple mathematical problems and about form validation and learn abouts C programing.
+        </p>
+      
+        <div class="social">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-youtube-square"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+      </div>
+  
+      <div class="column links" id="xv">
+        <h3>Some Links</h3>
+         <ul id="I">
+          <li>
+           <a href="Php.html">Php</a>
+          </li>
+          <li >
+           <a href="form.html">Form</a>
+          </li>
+          <li >
+          <a href="Cprograming.html"></a>
+          </li>
+          <li >
+          <a href="JS.html">JS</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="column subscribe" id="v">
+        <h3>For Querries </h3>
+        <div>
+          <input type="text" name="feeds" width="30%"placeholder="Write your problems and feedbacks here" />
+          <button>Submit</button>
+         </div>
+      
+      </div>
+      
+      </div>
+      
+      <div class="row copyright">
+        <div class="footer-menu">
+          <a href="index.html">Home</a>
+          <a href="HTML.html">HTML</a>
+          <a href="CSS.html">CSS</a>
+          <a href="JS.html">JS</a>
+          <a href="Php.html">PHP</a>
+          <a href="about.html">About me</a>
+          <a href="form.html">Form</a>
+    
+      
+        </div>
+         <p>Copyright &copy; 202l Shankar Aryal  ❤️</p>
+      </div>
+      </footer>
+  
+    
+          <script src="Asssets/js/nav.js"></script>
+  </body>
+</html>

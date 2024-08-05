@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=l.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Icon -->
+    <link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Asssets/css/style.css" >
+    <link rel="stylesheet" href="Asssets/css/footter.css">
+    <style>
+      main{
+        background-color:rgba(42, 12, 70, 0.341);
+        
+      }
+      .header-m{
+       padding-top:100px;
+        font-size: 50px;
+       text-align: center;
+      }
+      .header-m{
+        
+        animation: moveRight 2s linear forwards;
+      }
+      @keyframes moveRight {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
+      
+      .intro-m{
+        padding: 50px 30px 10px 30px;
+        font-size: 130%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        
+      }
+      main{
+        height: 1500%;                                                 /* IMP*/
+      }
+      .container {
+        display: flex; /* display the divs as a flex container */
+        height: 1500%;                                                 /* IMP*/
+       
+        margin-bottom: 0px;
+    }
+    .header-h{
+        background-color:rgb(126, 43, 204) ;
+        border-top: 150px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .left-p {
+        padding-right: 1.5%;
+       padding-top: 10px;
+        width: 15%; /* width of230% */
+        background-color: purple;
+        margin-bottom: 0;         
+        font-size: 18px;
+    }
+    
+    .right-p {
+
+        font-size: 125%;
+        margin-bottom: 0;
+        width: 85%; /* width of 80% */
+        background-color:rgba(42, 12, 70, 0.341);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;                                                   /* IMP*/
+    }
+    #first{
+        color: rgb(79, 3, 79);
+        font-size: 10px;
+    }
+    .title{
+        color: purple;
+        padding-top: 20px;
+        padding-left: 40px;
+        font-size: 28px;
+        font-weight: 20px;
+    }
+   
+    #co{
+        font-size: 130%;
+        padding-left: 35%;
+
+    } 
+    .dev{
+        color: red;
+        font-size: 22px;
+    }
+    </style>
+
+    <title>LearnMe/CSS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+         <h2 style="display: inline-block; vertical-align: middle;">LearnMe</h2>
+      </div>
+      <ul id="ul">
+        <li id="l" ><a href="index.html">Home</a></li>
+        <li id="l" ><a  href="HTML.html">HTML</a></li>
+        <li id="l" ><a  href="CSS.html">CSS</a></li>
+        <li id="l"><a href="JS.html">JS</a></li>
+        <li id="l"><a id="first" href="Php.html">PhP</a></li>
+        <li id="l"><a href="Aboutme.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="paragraph">
+        <div class="header-h">PHP</div>
+              <div class="container">
+                <div class="left-p">
+                <ul>
+                   <span id="co">Content</span>
+                   <li>~ Introduction</li><br>
+                   <li>~ OOPs Concepts in PHP</li><br>
+                   <li>~ Basics of PHP</li><br>
+                   <li>~Setting up the environment </li><br>
+                   <li>~ Writing the code and running the script</li><br>
+                   <li>~ Embedding HTML and PHP</li><br>
+                   <li>~ Comments in PHP</li><br>
+                   <li>~ Output statements in PHP</li><br>
+                 
+                </ul> 
+            </div>
+
+                <div class="right-p"> 
+                    <div class="title">Introduction</div>
+                    PHP is a server-side scripting language, mainly used for web development but also used as 
+                    a general-purpose programming language. Object-Oriented Programming (PHP OOP), is 
+                    a type of programming language principle added to php5, that helps in building complex, 
+                    reusable web applications
+                    <div class="title">OOPs Concepts in PHP</div>
+PHP is an object oriented scripting language; it supports all of the above principles. The above <br>
+principles are achieved via:<br>
+Encapsulation - via the use of “get” and “set” methods etc.<br>
+Inheritance - via the use of extends keyword<br>
+Polymorphism - via the use of implements keyword<br>
+<div class="title2">Basics of PHP</div>
+<div class="title">Setting up the environment</div>
+To run PHP a web development environment is needed.This needs a PHP compatible web 
+server and interpreter. Packages like WAMP, LAMP, XAMPP, etc can be used which includes a 
+web server.
+<div class="title">Writing the code and running the script</div>
+PHP scripts are plain text. A PHP script begins with <'?PHP and ends with ?>. The PHP code 
+is saved with extension .PHP and is saved in the root directory of web server. 
+The syntax of PHP tag is given below:<br>
+ <?php <br>
+ //your code here <br>
+ ?> <br>
+<div class="title">Embedding HTML and PHP</div>
+PHP codes are embedded in HTML document using the <?PHP and ?> tags.
+<div class="title">Comments in PHP</div>
+Comments are used to make code more readable. There are two types of comments-Single 
+line and Multi-line comments. A single line comment starts with // while multi-line comment 
+begins with /* and ends with */ .
+<div class="title">Output statements in PHP</div>
+There are two methods for displaying statements in PHP, by using<br>
+a. echo and print<br>
+Both echo and print are used to display result(Statements). The echo and print statement 
+can be used with or without parentheses.<br>
+b. Var_dump ( )<br>
+The var_dump ( ) function is used to display data type and value of a variable.<br>
+File: first.php <br>
+<img src="Asssets/img/code3.png" width="600px"alt="" srcset=""> #code3
+<span><a href="Asssets/php/hdd.php"> click to watch output</a></span>
+
+       <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
+
+                </div>
+              </div>
+      </div>
+    </main>
+
+
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+      
+        <h3>Learn me</h3>
+      
+         <p>
+            Hi , I am Shankar Aryal  computer science student this is simple demonstration of website where you can know about me ,check some simple mathematical problems and about form validation and learn abouts C programing.
+        </p>
+      
+        <div class="social">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-youtube-square"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+      </div>
+  
+      <div class="column links" id="xv">
+        <h3>Some Links</h3>
+         <ul id="I">
+          <li>
+           <a href="Php.html">Php</a>
+          </li>
+          <li >
+           <a href="form.html">Form</a>
+          </li>
+          <li >
+          <a href="Cprograming.html"></a>
+          </li>
+          <li >
+          <a href="JS.html">JS</a>
+          </li>
+        </ul>
+        </div>
+      <div class="column subscribe" id="v">
+       <h3>For Querries Contact us in</h3>
+       <div>
+        <input type="text" name="feeds" width="30%"placeholder="Write your problems and feedbacks here" />
+        <button>Submit</button>
+       </div>
+      </div>
+      
+      </div>
+      
+      <div class="row copyright">
+        <div class="footer-menu">
+      
+            <a href="index.html">Home</a>
+            <a href="HTML.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="JS.html">JS</a>
+            <a href="Php.html">PHP</a>
+            <a href="about.html">About me</a>
+            <a href="form.html">Form</a>
+      
+        </div>
+         <p>Copyright &copy; 202l Shankar Aryal  ❤️</p>
+      </div>
+      </footer>
+  
+    
+          <script src="Asssets/js/nav.js"></script>
+  </body>
+</html>
