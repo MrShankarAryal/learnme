@@ -1,40 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    console.log('DOM fully loaded and parsed');
+    
+    const hamburger = document.querySelector("#hamburger");
+    const navMenu = document.querySelector("#nav-menu");
+    
+    console.log('Hamburger element:', hamburger);
+    console.log('Nav menu element:', navMenu);
 
-    function toggleMenu() {
-        navMenu.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-        menuToggle.classList.toggle('active');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener("click", function() {
+            console.log('Hamburger clicked');
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    } else {
+        console.error('Hamburger or nav menu element not found');
     }
 
-    menuToggle.addEventListener('click', toggleMenu);
-
-    // Close menu when a link is clicked
-    const navLinks = document.querySelectorAll('#nav-menu li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (navMenu.classList.contains('active')) {
-                toggleMenu();
-            }
-        });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickInsideMenuToggle = menuToggle.contains(event.target);
-        if (!isClickInsideNav && !isClickInsideMenuToggle && navMenu.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
-});    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+    document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", function() {
+        console.log('Nav link clicked');
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }));
 });
