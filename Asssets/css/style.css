@@ -136,6 +136,7 @@ main {
     display: flex;
     justify-content: space-around;
     width: 50%;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links li {
@@ -153,7 +154,19 @@ main {
 .hamburger {
     display: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
+/* Add these styles to make changes more noticeable */
+
+
+.hamburger.active {
+    transform: rotate(90deg);
+}
+
+
+
+
 
 .bar {
     display: block;
@@ -179,6 +192,7 @@ main {
 
     .nav-links.active {
         left: 0;
+        display: flex; /* Ensure it's displayed when active */
     }
 
     .nav-links li {
@@ -201,3 +215,4 @@ main {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
