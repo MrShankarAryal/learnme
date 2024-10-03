@@ -164,16 +164,14 @@ main {
     background-color: white;
 }
 
-
 @media screen and (max-width: 768px) {
     .nav-links {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 70px; /* Adjust based on your nav height */
         flex-direction: column;
         background-color: rgb(126, 43, 204);
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
