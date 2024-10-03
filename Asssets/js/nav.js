@@ -1,20 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.querySelector('#menu-icon');
-    const navMenu = document.querySelector('#nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-    function toggleMenu() {
-        menuIcon.classList.toggle('active');
-        navMenu.classList.toggle('active');
+    hamburger.addEventListener("click", mobileMenu);
+    navLinks.forEach(n => n.addEventListener("click", closeMenu));
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
     }
 
-    menuIcon.addEventListener('click', toggleMenu);
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
-                toggleMenu();
-            }
-        });
-    });
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
 });
