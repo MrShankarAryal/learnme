@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle("active");
     }
 
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
+    // nav.js
+function closeMenu() {
+  const isMenuOpen = navMenu.classList.contains("active");
+  if (!isMenuOpen) return;
+
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
 });
