@@ -1,17 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-bars input');
-    const nav = document.querySelector('nav ul');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const menuBars = document.querySelector('.menu-bars');
 
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('slide');
-    });
+    function toggleMenu() {
+        navMenu.classList.toggle('active');
+        menuBars.classList.toggle('active');
+    }
+
+    menuToggle.addEventListener('change', toggleMenu);
 
     // Close menu when a link is clicked
-    const navLinks = document.querySelectorAll('nav ul li a');
+    const navLinks = document.querySelectorAll('#nav-menu li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            if (nav.classList.contains('slide')) {
-                nav.classList.remove('slide');
+            if (navMenu.classList.contains('active')) {
+                toggleMenu();
                 menuToggle.checked = false;
             }
         });
@@ -19,13 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
-        const isClickInsideNav = nav.contains(event.target);
-        const isClickInsideMenuToggle = menuToggle.contains(event.target);
-
-        if (!isClickInsideNav && !isClickInsideMenuToggle && nav.classList.contains('slide')) {
-            nav.classList.remove('slide');
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickInsideMenuToggle = menuBars.contains(event.target);
+        if (!isClickInsideNav && !isClickInsideMenuToggle && navMenu.classList.contains('active')) {
+            toggleMenu();
             menuToggle.checked = false;
         }
     });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
- 
