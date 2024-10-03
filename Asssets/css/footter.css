@@ -1,7 +1,7 @@
 footer {
     padding-top: 20px;
     background-color: rgb(126, 43, 204);
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
@@ -20,6 +20,7 @@ footer * {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     align-items: stretch;
+    gap: 20px;
 }
 
 .column {
@@ -36,6 +37,7 @@ h3 {
     color: white;
     font-size: 1.4em;
     white-space: nowrap;
+    margin-bottom: 1em;
 }
 
 footer ul {
@@ -51,12 +53,13 @@ footer li:not(:first-child) {
 }
 
 footer ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #2a8ded;
+    color: #f0e68c;
 }
 
 .about p {
@@ -75,9 +78,15 @@ button {
 }
 
 button {
-    background-color: #c7940a;
-    color: #ffffff;
-    border-color: #c7940a;
+    background-color: #f0e68c;
+    color: rgb(126, 43, 204);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
 }
 
 div.social {
@@ -89,13 +98,17 @@ div.social {
 }
 
 .social i {
-    color: #bac6d9;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social i:hover {
+    color: #f0e68c;
 }
 
 .copyright {
     padding: 0.3em 1em;
-    background-color: purple;
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .footer-menu {
@@ -107,10 +120,11 @@ div.social {
     color: #cfd2d6;
     padding: 6px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-menu a:hover {
-    color: #27bcda;
+    color: #f0e68c;
 }
 
 .copyright p {
@@ -118,24 +132,27 @@ div.social {
     text-align: right;
 }
 
-#xv {
-    margin-left: 28%;
-}
-
-#v {
-    margin-left: 20%;
-}
-
-footer {
-    margin-top: 0px;
-}
-
 /* Responsive styles */
 @media screen and (max-width: 850px) {
     .row.primary {
         grid-template-columns: 1fr;
     }
-    #xv, #v {
-        margin-left: 0;
+
+    .column {
+        padding: 0 1em;
+        margin-bottom: 1em;
+    }
+
+    .footer-menu, .copyright p {
+        text-align: center;
+        float: none;
+    }
+
+    .footer-menu {
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        padding: 1em;
     }
 }
