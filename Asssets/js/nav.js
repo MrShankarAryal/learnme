@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
-    const menuBars = document.querySelector('.menu-bars');
 
     function toggleMenu() {
-        navMenu.classList.toggle('active');
-        menuBars.classList.toggle('active');
+        navMenu.classList.toggle('slide');
+        document.body.classList.toggle('menu-open');
     }
 
     menuToggle.addEventListener('change', toggleMenu);
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('#nav-menu li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            if (navMenu.classList.contains('active')) {
+            if (navMenu.classList.contains('slide')) {
                 toggleMenu();
                 menuToggle.checked = false;
             }
@@ -24,12 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         const isClickInsideNav = navMenu.contains(event.target);
-        const isClickInsideMenuToggle = menuBars.contains(event.target);
-        if (!isClickInsideNav && !isClickInsideMenuToggle && navMenu.classList.contains('active')) {
+        const isClickInsideMenuToggle = menuToggle.contains(event.target);
+        if (!isClickInsideNav && !isClickInsideMenuToggle && navMenu.classList.contains('slide')) {
             toggleMenu();
             menuToggle.checked = false;
         }
     });
+});
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
