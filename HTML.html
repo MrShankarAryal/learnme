@@ -13,161 +13,93 @@
     />
     <link rel="stylesheet" href="Asssets/css/style.css" >
     <link rel="stylesheet" href="Asssets/css/footter.css">
-    <style>
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Header Styling */
-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Sidebar Styling */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 100px; /* Adjusted to be below header */
-    width: 240px;
-    height: calc(100vh - 140px); /* To fit between header and footer */
-    background-color: #34495e;
-    padding: 20px;
-    overflow-y: auto;
-    transition: all 0.4s ease;
-}
-
-.sidebar::-webkit-scrollbar {
-    width: 6px;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background-color: #1abc9c;
-    border-radius: 5px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 20px;
-}
-
-.sidebar ul li a {
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    background-color: #2c3e50;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.sidebar ul li a:hover {
-    background-color: #1abc9c;
-    transform: translateX(10px);
-}
-
-/* Main content styling */
-main {
-    display: flex;
-    padding-left: 260px; /* Adjusted for the sidebar width */
-    padding-top: 20px;
-}
-
-.content-section {
-    padding: 40px;
-    background-color: #ecf0f1;
-    width: 100%;
-    min-height: 100vh;
-    transition: all 0.4s ease;
-}
-
-.content-item {
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-item h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-    position: relative;
-    padding-bottom: 8px;
-    transition: all 0.3s ease;
-}
-
-.content-item h2::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 4px;
-    background-color: #1abc9c;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease;
-}
-
-.content-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.content-item:hover h2::before {
-    width: 100%;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Scrollable Sidebar */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        overflow-y: visible;
-        top: 0;
-    }
-
-    .sidebar ul li a {
-        text-align: center;
-        padding: 15px;
-    }
-
-    main {
-        padding-left: 0;
-    }
-}
-    </style>
     <title>LearnMe/HTML </title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #f4f7fc;
+        }
+    
+    
+    
+        body {
+            font-family: 'Rubik', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+    
+    
+        main {
+            display: flex;
+            margin-top: 2rem;
+        }
+    
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .sidebar ul {
+            list-style: none;
+        }
+    
+        .sidebar li {
+            margin-bottom: 1rem;
+        }
+    
+        .sidebar a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+    
+        .sidebar a:hover {
+            color: var(--primary-color);
+        }
+    
+        .content {
+            flex: 1;
+            padding-left: 2rem;
+        }
+    
+        .content-section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+    
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+    
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+    
+            .sidebar {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+    
+            .content {
+                padding-left: 0;
+            }
+    
+        }
+    </style>
+    
   </head>
   <body>
  <header>
@@ -191,139 +123,187 @@ footer {
             </div>
         </nav>
     </header>
-   
-    <main >
-  
-            <aside class="sidebar">
-                <!-- Sidebar navigation -->
+
+
+    <main class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">HTML Tags</a></li>
+                <li><a href="#section3">HTML Documents</a></li>
+                <li><a href="#section4">Editing HTML</a></li>
+                <li><a href="#section5">File Extensions</a></li>
+                <li><a href="#section6">HTML Headings</a></li>
+                <li><a href="#section7">HTML Links</a></li>
+                <li><a href="#section8">HTML Images</a></li>
+                <li><a href="#section9">HTML Element Syntax</a></li>
+                <li><a href="#section10">Nested HTML Elements</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="section1" class="content-section">
+                <h2>What is HTML?</h2>
+                <p>HTML is a language for describing web pages.</p>
                 <ul>
-                 ] <li><a href="#section1">Introduction</a></li>
-            <li><a href="#section2">HTML Tag</a></li>
-            <li><a href="#section3">HTML Documents = Web Pages</a></li>
-           <li><a href="#section4">Editing HTML</a></li>
-            <li><a href="#section5">HTM or .HTML File Extension?</a></li>
-            <li><a href="#section6">HTML Headings</a></li>
-            <li><a href="#section7">HTML Links</a></li>
-            <li><a href="#section8">HTML Images</a></li>
-            <li><a href="#section9">HTML Element Syntax</a></li>
-           <li><a href="#section10">Nested HTML Elements</a></li>
-                    <!-- More links -->
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is not a programming language, it is a markup language</li>
+                    <li>A markup language is a set of markup tags</li>
+                    <li>HTML uses markup tags to describe web pages</li>
                 </ul>
-            </aside>
- 
+            </section>
+            <section id="section2" class="content-section">
+                <div class="content-item">
+                    <h2>HTML Tags</h2>
+                    <p>
+                        HTML markup tags are usually called HTML tags<br>
+                         HTML tags are keywords surrounded by angle brackets like <'html><br>
+                            HTML tags normally come in pairs like <'b'> and
+                                <'b' /><br>
+                                 The first tag in a pair is the start tag, the second tag is the end tag<br>
+                                 Start and end tags are also called opening tags and closing tags<br>
+                    </p>
+                </div>
+            </section>
+            <section class="content-section" id="section3">
+                <div class="content-item">
+                    <h2>HTML Documents = Web Pages</h2>
+                    <p>
+                        HTML documents deseribe web pages<br>
+                         HTML documents contain HTML tags and plain text<br>
+                         HTML documents are also called web pages<br>
+                        The purpose of a web browser (like Internet Explorer or Firefox) is to read HTML
+                        documents and display them as web pages. The browser does not display the HTML tags,
+                        but uses the tags to interpret the content of the page:<br>
+                        <'html><br>
+                            <'body><br>
+                                <'h1>My First Heading<' /hl><br>
+                                        <'p>My first paragraph.<' /p><br>
+                                                <' /body><br>
+                                                    <' /html><br>
+                  
+                    <h2>Example Explained </h2>
+                            <p>
+                                The text between <'html> and <' /html> describes the web page<br>
+                                        The text between <'body> and <'body> is the visible page content<br>
+                                                The text between <'hl> and <' /hl> is displayed as a heading<br>
+                                                        The text between <'p> and <' /p> is displayed as a paragraph<br>
+                            </p>
+                </div>
+            </section>
+            <section class="content-section" id="section4">
+                <div class="content-item">
+                    <h2>Editing HTML</h2>
+                    <p>
+                        HTML can be written and edited using many different editors like Dreamweaver and
+                        Visual Studio.
+                        However, in this tutorial we use a plain text editor (like Notepad) to edit HTML. We
+                        believe using a plain text editor is the best way to learn HTML.
+                    </p>
+                </div>
+            </section>
+            <section class="content-section" id="section5">
+                <div class="content-item">
+                    <h2>HTM or .HTML File Extension?</h2>
+                    <p>
+                        When you save an HTML file, you can use either the .htm or the html file extension.
+                        There is no difference; it is entirely up to you.
+                    </p>
+            </section>
+            <section class="content-section" id="section6">
+                <div class="content-item">
+                    <h2>HTML Headings</h2>
+                    <p>
+                        HTML headings are defined with the <'h1> to <'h6> tags.<br>
+                                Example:<br>
+                                <'h1>This is a heading<' /h1><br>
+                                        <'h2>This is a heading<' /h2><br>
+                                                <'h3>This is a heading<' /h3><br>
+                    </p>
+                </div>
+            </section>
 
-        
-    
+            <section class="content-section" id="section7">
+                <div class="content-item">
+                    <h2>HTML Links</h2>
+                    <p>
+                        HTML links are defined with the <'a> tag.<br>
+                            Example:<br>
+                            <'a href="http://www.xitecsolutions.com">This is a link<'a><br>
+                                    Note: The link address is specifie<br>
+                                    (You will learn about attributes intorial).
+                    </p>
+                </div>
+            </section>
+            <section class="content-section" id="section8">
+                <div class="content-item">
+                    <h2>HTML Images</h2>
+                    <p>
 
-        
-           <section id="section1"  class="content-section">  <div class="content-item"> <h2> What is HTML?</h2> <p>    
-HTML is a language for describing web pages.<br>
-* HTML stands for Hyper Text Markup Language<br>
-* HTML is not a programming language, it is a markup language<br>
-* A markup language is a set of markup tags<br>
-* HTML uses markup tags to describe web pages<br>
-           </p></div>
-           </section>
-  <section id="section2"  class="content-section">  <div class="content-item"> <h2>HTML Tags</h2> <p>   
-HTML markup tags are usually called HTML tags<br>
-* HTML tags are keywords surrounded by angle brackets like <'html><br>
-* HTML tags normally come in pairs like <'b'> and <'b'/><br>
-* The first tag in a pair is the start tag, the second tag is the end tag<br>
-* Start and end tags are also called opening tags and closing tags<br>
-  </p></div>
-           </section>
-   <section   class="content-section" id="section3">  <div class="content-item"> <h2>HTML Documents = Web Pages</h2> <p>  
-* HTML documents deseribe web pages<br>
-* HTML documents contain HTML tags and plain text<br>
-* HTML documents are also called web pages<br>
-The purpose of a web browser (like Internet Explorer or Firefox) is to read HTML
-documents and display them as web pages. The browser does not display the HTML tags,
-but uses the tags to interpret the content of the page:<br>
-<'html><br>
-<'body><br>
-<'h1>My First Heading<'/hl><br>
-<'p>My first paragraph.<'/p><br>
-<'/body><br>
-<'/html><br>
-   </p></div>
-           </section>
-   <section  class="content-section" id="section404"> <div class="content-item"> <h2>Example Explained<</h2> <p>  
-The text between <'html> and <'/html> describes the web page<br>
-The text between <'body> and <'body> is the visible page content<br>
-The text between <'hl> and <'/hl> is displayed as a heading<br>
-The text between <'p> and <'/p> is displayed as a paragraph<br>
-   </p></div>
-           </section>
-   <section   class="content-section" id="section4"> <div class="content-item"> <h2>>Editing HTML</h2> <p>  
-HTML can be written and edited using many different editors like Dreamweaver and
-Visual Studio.
-However, in this tutorial we use a plain text editor (like Notepad) to edit HTML. We
-believe using a plain text editor is the best way to learn HTML.
-   </p></div>
-           </section>
-     <section   class="content-section" id="section5"> <div class="content-item"> <h2>HTM or .HTML File Extension?</h2> <p>  
-When you save an HTML file, you can use either the .htm or the html file extension.
-There is no difference; it is entirely up to you.
-   </p>
-           </section>
-  <section id="section6"> <div class="content-item"> <h2>HTML Headings</h2> <p>  
-HTML headings are defined with the <'h1> to <'h6> tags.<br>
-Example:<br>
-<'h1>This is a heading<'/h1><br>
-<'h2>This is a heading<'/h2><br>
-<'h3>This is a heading<'/h3><br>
-     </p></div>
-           </section>
-    <section  class="content-section" id="section7"> <div class="content-item"> <h2>HTML Links</h2> <p>  
-HTML links are defined with the <'a> tag.<br>
-Example:<br>
-<'a href="http://www.xitecsolutions.com">This is a link<'a><br>
-Note: The link address is specifie<br>
-(You will learn about attributes intorial).
-      </p></div>
-           </section> 
-     <section  class="content-section" id="section8"> <div class="content-item"> <h2>HTML Images</h2> <p>  
-
-HTML images are defined with the <img> tag.<br>
-Example<br>
-<'img sre="xitec.jpg" width "104" height"142" ><br>
-Note: The name and the size of the image are provided as attributes.<br>
-HTML Elements
-An HTML element is everything from the start tag to the end tag:<br>
-Start tag : 1) <'p> <br>
-           2)<'a href="default.htm" > <br>
-Element content
-           1) This is paragraph<br>
-            2) This is link<br>
-            3) This is breaking tag for new line text<br>
-End tag :  1)<'/p><br>
-           2) <'/a><br>
-            3) <'br/>(br)
-*The start tag is often called the opening tag. The end tag is often called the closing tag.
-                </p></div>
-           </section> 
-   <section  class="content-section" id="section9"> <div class="content-item"> <h2>HTML Element Syntax</h2> <p>  
+                        HTML images are defined with the <img> tag.<br>
+                        Example<br>
+                        <'img sre="xitec.jpg" width "104" height"142"><br>
+                            Note: The name and the size of the image are provided as attributes.<br>
+                            HTML Elements
+                            An HTML element is everything from the start tag to the end tag:<br>
+                            Start tag : 1) <'p> <br>
+                                2)<'a href="default.htm"> <br>
+                                    Element content
+                                    1) This is paragraph<br>
+                                    2) This is link<br>
+                                    3) This is breaking tag for new line text<br>
+                                    End tag : 1)<' /p><br>
+                                        2) <' /a><br>
+                                            3)
+                                            <'br />(br)
+                                            *The start tag is often called the opening tag. The end tag is often called
+                                            the closing tag.
+                    </p>
+                </div>
+            </section>
+            <section class="content-section" id="section9">
+                <div class="content-item">
+                    <h2>HTML Element Syntax</h2>
+                    <p>
 
 
-* An HTML element starts with a start tag/ opening tag.<br>
-* An HTML element ends with an end tag/ closing tag<br>
-* The element content is everything between the start and the end tag<br>
-* Some HTML elements have empty content<br>
-* Empty elements are closed in the start tag<br>
-* Most HTML elements can have attributes<br>
-Tip: You will learn about attributes in the next chapter of this tutorial.
-         </p></div>
-           </section>
-              <section  class="content-section" id="section10"> <div class="content-item"> <h2>Nested HTML Elements</h2> <p>  
+                        An HTML element starts with a start tag/ opening tag.<br>
+                         An HTML element ends with an end tag/ closing tag<br>
+                        The element content is everything between the start and the end tag<br>
+                         Some HTML elements have empty content<br>
+                         Empty elements are closed in the start tag<br>
+                         Most HTML elements can have attributes<br>
+                        Tip: You will learn about attributes in the next chapter of this tutorial.
+                    </p>
+                </div>
+            </section>
+            <section class="content-section" id="section10">
+                <div class="content-item">
+                    <h2>Nested HTML Elements</h2>
+                    <p>
 
-Most HTML elements can be nested (can contain other HTML elements).
-HTML documents consist of nested HTML elements.
-                  </p> </div>
-           </section>
-              
-       <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
-      
+                        Most HTML elements can be nested (can contain other HTML elements).
+                        HTML documents consist of nested HTML elements.
+                    </p>
+                </div>
+            </section>
+
+           
+            <!-- Add other sections here -->
+
+            <section id="section10" class="content-section">
+                <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
+            </section>
+        </div>
     </main>
+
+
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+
+
+   
     <footer>
       <div class="row primary">
         <div class="column about">
