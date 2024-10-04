@@ -59,7 +59,16 @@ body {
             margin-bottom: 1rem;
         }
     
-        @media (max-width: 768px) {
+      
+         /* Default for larger screens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+  @media (max-width: 768px) {
             main {
                 flex-direction: column;
             }
@@ -72,6 +81,42 @@ body {
             .content {
                 padding-left: 0;
             }
+   
+/* For mobile devices (up to 600px width) */
+@media (max-width: 600px) {
+    img {
+        width: 100%; /* Make sure the image takes full width in mobile */
+        height: auto;
+        margin: 10px auto;
+    }
+    
+    .container {
+        flex-direction: column; /* Stack content vertically for better readability */
+    }
+    
+    pre {
+        font-size: 12px; /* Make code font smaller on mobile to fit better */
+    }
+}
+
+/* For tablets (600px to 1024px width) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    img {
+        width: 80%; /* Slightly smaller for tablet view */
+    }
+    
+    pre {
+        font-size: 14px;
+    }
+}
+
+/* Larger screens (above 1024px) */
+@media (min-width: 1024px) {
+    img {
+        width: 60%; /* Keep images slightly smaller but responsive on larger screens */
+    }
+}
+
     
         }
 img {
