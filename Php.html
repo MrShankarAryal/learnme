@@ -14,77 +14,7 @@
 
     <link rel="stylesheet" href="Asssets/css/style.css" >
     <link rel="stylesheet" href="Asssets/css/footter.css">
-    <style>
-      main{
-        background-color:rgba(42, 12, 70, 0.341);
-        
-      }
-     
-      @keyframes moveRight {
-        from { transform: translateX(-100%); }
-        to { transform: translateX(0); }
-    }
-      
-      .intro-m{
-        padding: 50px 30px 10px 30px;
-        font-size: 130%;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        
-      }
-      main{
-        height: 1500%;                                                 /* IMP*/
-      }
-      .container {
-        display: flex; /* display the divs as a flex container */
-        height: 1500%;                                                 /* IMP*/
-       
-        margin-bottom: 0px;
-    }
-   
-    
-    .left-p {
-        padding-right: 1.5%;
-       padding-top: 10px;
-        width: 15%; /* width of230% */
-        background-color: purple;
-        margin-bottom: 0;         
-        font-size: 18px;
-    }
-    
-    .right-p {
-
-        font-size: 125%;
-        margin-bottom: 0;
-        width: 85%; /* width of 80% */
-        background-color:rgba(42, 12, 70, 0.341);
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;                                                   /* IMP*/
-    }
-    #first{
-        color: rgb(79, 3, 79);
-        font-size: 10px;
-    }
-    .title{
-        color: purple;
-        padding-top: 20px;
-        padding-left: 40px;
-        font-size: 28px;
-        font-weight: 20px;
-    }
-   
-    #co{
-        font-size: 130%;
-        padding-left: 35%;
-
-    } 
-    .dev{
-        color: red;
-        font-size: 22px;
-    }
-    </style>
-
+     <link rel="stylesheet" href="Asssets/css/content.css">
     <title>LearnMe/CSS</title>
   </head>
   <body>
@@ -110,73 +40,175 @@
         </nav>
     </header>
 
-    <main>
-      <div class="paragraph">
-        <div class="header-h">PHP</div>
-              <div class="container">
-                <div class="left-p">
-                <ul>
-                   <span id="co">Content</span>
-                   <li>~ Introduction</li><br>
-                   <li>~ OOPs Concepts in PHP</li><br>
-                   <li>~ Basics of PHP</li><br>
-                   <li>~Setting up the environment </li><br>
-                   <li>~ Writing the code and running the script</li><br>
-                   <li>~ Embedding HTML and PHP</li><br>
-                   <li>~ Comments in PHP</li><br>
-                   <li>~ Output statements in PHP</li><br>
-                 
-                </ul> 
-            </div>
+   <main class="container">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">OOP Concepts in PHP</a></li>
+            <li><a href="#section3">Data Types</a></li>
+            <li><a href="#section4">Variables and Constants</a></li>
+            <li><a href="#section5">Control Structures</a></li>
+            <li><a href="#section6">Functions</a></li>
+            <li><a href="#section7">Superglobals</a></li>
+            <li><a href="#section8">Error Handling</a></li>
+            <li><a href="#section9">PHP with Databases</a></li>
+            <li><a href="#section10">Sessions and Cookies</a></li>
+            <li><a href="#section11">File Handling</a></li>
+            <li><a href="#section12">Security Best Practices</a></li>
+            <li><a href="#section13">Working with APIs</a></li>
+        </ul>
+    </aside>
 
-                <div class="right-p"> 
-                    <div class="title">Introduction</div>
-                    PHP is a server-side scripting language, mainly used for web development but also used as 
-                    a general-purpose programming language. Object-Oriented Programming (PHP OOP), is 
-                    a type of programming language principle added to php5, that helps in building complex, 
-                    reusable web applications
-                    <div class="title">OOPs Concepts in PHP</div>
-PHP is an object oriented scripting language; it supports all of the above principles. The above <br>
-principles are achieved via:<br>
-Encapsulation - via the use of “get” and “set” methods etc.<br>
-Inheritance - via the use of extends keyword<br>
-Polymorphism - via the use of implements keyword<br>
-<div class="title2">Basics of PHP</div>
-<div class="title">Setting up the environment</div>
-To run PHP a web development environment is needed.This needs a PHP compatible web 
-server and interpreter. Packages like WAMP, LAMP, XAMPP, etc can be used which includes a 
-web server.
-<div class="title">Writing the code and running the script</div>
-PHP scripts are plain text. A PHP script begins with <'?PHP and ends with ?>. The PHP code 
-is saved with extension .PHP and is saved in the root directory of web server. 
-The syntax of PHP tag is given below:<br>
- <?php <br>
- //your code here <br>
- ?> <br>
-<div class="title">Embedding HTML and PHP</div>
-PHP codes are embedded in HTML document using the <?PHP and ?> tags.
-<div class="title">Comments in PHP</div>
-Comments are used to make code more readable. There are two types of comments-Single 
-line and Multi-line comments. A single line comment starts with // while multi-line comment 
-begins with /* and ends with */ .
-<div class="title">Output statements in PHP</div>
-There are two methods for displaying statements in PHP, by using<br>
-a. echo and print<br>
-Both echo and print are used to display result(Statements). The echo and print statement 
-can be used with or without parentheses.<br>
-b. Var_dump ( )<br>
-The var_dump ( ) function is used to display data type and value of a variable.<br>
-File: first.php <br>
-<img src="Asssets/img/code3.png" width="600px"alt="" srcset=""> #code3
-<span><a href="Asssets/php/hdd.php"> click to watch output</a></span>
+    <div class="content">
+        <section id="section1" class="content-section">
+            <h2>Introduction</h2>
+            <p>PHP is a widely-used, open-source, server-side scripting language. It is especially suited for web development and can be embedded into HTML.</p>
+        </section>
 
-       <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
+        <section id="section2" class="content-section">
+            <h2>OOP Concepts in PHP</h2>
+            <p>Object-Oriented Programming (OOP) in PHP enables developers to organize code into reusable classes and objects. Key concepts include:</p>
+            <ul>
+                <li><strong>Encapsulation</strong>: Restricting access to certain parts of an object.</li>
+                <li><strong>Inheritance</strong>: A class can inherit properties and methods from another class.</li>
+                <li><strong>Polymorphism</strong>: A method can have different behaviors based on the object that invokes it.</li>
+                <li><strong>Abstraction</strong>: Defining abstract methods in a class, implemented by child classes.</li>
+            </ul>
+            <pre><code>
+class Car {
+    public $color;
+    function __construct($color) {
+        $this->color = $color;
+    }
+}
+            </code></pre>
+        </section>
 
-                </div>
-              </div>
-      </div>
-    </main>
+        <section id="section3" class="content-section">
+            <h2>Data Types in PHP</h2>
+            <p>PHP supports several data types, including:</p>
+            <ul>
+                <li><strong>String</strong>: A sequence of characters.</li>
+                <li><strong>Integer</strong>: Non-decimal numbers.</li>
+                <li><strong>Float</strong>: Decimal numbers.</li>
+                <li><strong>Boolean</strong>: Either <code>true</code> or <code>false</code>.</li>
+                <li><strong>Array</strong>: A collection of values.</li>
+                <li><strong>Object</strong>: An instance of a class.</li>
+                <li><strong>NULL</strong>: Represents a variable with no value.</li>
+            </ul>
+        </section>
 
+        <section id="section4" class="content-section">
+            <h2>Variables and Constants</h2>
+            <p>Variables in PHP are declared with a <code>$</code> sign and can hold various data types. Constants are immutable and defined using the <code>define()</code> function.</p>
+            <pre><code>
+$var = "Hello World!";
+define("PI", 3.14);
+            </code></pre>
+        </section>
+
+        <section id="section5" class="content-section">
+            <h2>Control Structures (Conditions and Loops)</h2>
+            <p>PHP offers several control structures to manage the flow of the program:</p>
+            <ul>
+                <li><strong>If/Else Statements</strong>: Conditional logic to execute code based on certain conditions.</li>
+                <li><strong>Switch Statements</strong>: Similar to <code>if</code> but for multiple conditions.</li>
+                <li><strong>Loops</strong>:
+                    <ul>
+                        <li><code>for</code> loop</li>
+                        <li><code>while</code> loop</li>
+                        <li><code>foreach</code> loop for arrays</li>
+                        <li><code>do...while</code> loop</li>
+                    </ul>
+                </li>
+            </ul>
+            <pre><code>
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+            </code></pre>
+        </section>
+
+        <section id="section6" class="content-section">
+            <h2>Functions in PHP</h2>
+            <p>Functions in PHP are reusable blocks of code that perform specific tasks. You can define custom functions or use built-in PHP functions.</p>
+            <pre><code>
+function greet($name) {
+    return "Hello " . $name;
+}
+            </code></pre>
+        </section>
+
+        <section id="section7" class="content-section">
+            <h2>Superglobals</h2>
+            <p>PHP superglobals are predefined variables that are accessible globally throughout the script. Common superglobals include:</p>
+            <ul>
+                <li><code>$_GET</code>: Retrieve data sent via HTTP GET.</li>
+                <li><code>$_POST</code>: Retrieve data sent via HTTP POST.</li>
+                <li><code>$_SESSION</code>: Store user session data.</li>
+                <li><code>$_COOKIE</code>: Store small pieces of data in the user's browser.</li>
+            </ul>
+        </section>
+
+        <section id="section8" class="content-section">
+            <h2>Error Handling in PHP</h2>
+            <p>PHP provides various ways to handle errors and exceptions:</p>
+            <ul>
+                <li><strong>Try-Catch Blocks</strong>: Handle exceptions in PHP code.</li>
+                <li><strong>Custom Error Handlers</strong>: Define custom error handling using <code>set_error_handler()</code>.</li>
+                <li><strong>Error Reporting</strong>: Adjust the level of error reporting using <code>error_reporting()</code>.</li>
+            </ul>
+        </section>
+
+        <section id="section9" class="content-section">
+            <h2>Connecting PHP with Databases (MySQL)</h2>
+            <p>PHP can interact with MySQL databases using:</p>
+            <ul>
+                <li><strong>MySQLi</strong>: Improved MySQL extension for interacting with MySQL databases.</li>
+                <li><strong>PDO (PHP Data Objects)</strong>: A unified API for different database systems.</li>
+            </ul>
+            <pre><code>
+$conn = new mysqli("localhost", "username", "password", "database");
+            </code></pre>
+        </section>
+
+        <section id="section10" class="content-section">
+            <h2>Sessions and Cookies in PHP</h2>
+            <p>Sessions store user information across multiple pages, while cookies store small pieces of data in the user's browser.</p>
+            <pre><code>
+session_start();
+$_SESSION["username"] = "Shankar";
+            </code></pre>
+        </section>
+
+        <section id="section11" class="content-section">
+            <h2>File Handling in PHP</h2>
+            <p>PHP allows you to handle files through reading, writing, and uploading:</p>
+            <pre><code>
+$file = fopen("testfile.txt", "r");
+            </code></pre>
+        </section>
+
+        <section id="section12" class="content-section">
+            <h2>Security Best Practices in PHP</h2>
+            <p>Ensure security by following these best practices:</p>
+            <ul>
+                <li><strong>SQL Injection Prevention</strong>: Use prepared statements to avoid SQL injection.</li>
+                <li><strong>Cross-Site Scripting (XSS) Prevention</strong>: Sanitize user input using <code>htmlspecialchars()</code>.</li>
+                <li><strong>CSRF Protection</strong>: Use CSRF tokens for forms to prevent cross-site request forgery.</li>
+            </ul>
+        </section>
+
+        <section id="section13" class="content-section">
+            <h2>Working with APIs in PHP</h2>
+            <p>PHP can work with external APIs using <code>curl</code> or the <code>file_get_contents()</code> function.</p>
+            <pre><code>
+$json = file_get_contents("https://api.example.com/data");
+$data = json_decode($json);
+            </code></pre>
+        </section>
+    </div>
+</main>
 
     <footer>
       <div class="row primary">
