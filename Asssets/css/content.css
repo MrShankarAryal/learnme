@@ -5,13 +5,13 @@
             --background-color: #f4f7fc;
         }
 body {
-    padding-top: 60px; /* Add padding to body to account for fixed header */
+    padding-top: 90px; /* Add padding to body to account for fixed header */
 }
 
         main {
             display: flex;
             margin-top: 2rem;
-            padding-top: 70px;
+            padding-top: 90px;
         }
     
         .sidebar {
