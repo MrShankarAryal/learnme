@@ -121,10 +121,12 @@
             <p>JavaScript provides an easy way to handle user events like clicks, form submissions, key presses, etc. These events allow developers to create highly interactive user interfaces.</p>
             <h3>Example of Event Handling:</h3>
             <pre>
+            <code>
 document.getElementById("myButton").addEventListener("click", function() {
     alert("Button clicked!");
-});
+});   </code>
             </pre>
+          
             <h3>Output:</h3>
             <button id="myButton">Click Me!</button>
             <script>
@@ -152,6 +154,7 @@ document.getElementById("myButton").addEventListener("click", function() {
             <p>Handling asynchronous operations like API calls or file operations can be difficult using callbacks. JavaScript ES6 introduced Promises, which are objects that represent the eventual completion (or failure) of an asynchronous operation and its resulting value. Later, ES8 introduced async/await for a more synchronous-looking way to handle Promises.</p>
             <h3>Example with Promises:</h3>
             <pre>
+               <code>
 function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -162,16 +165,18 @@ function fetchData() {
 
 fetchData().then(result => {
     console.log(result);
-});
+}); </code>
             </pre>
             <h3>Example with Async/Await:</h3>
             <pre>
+               <code>
 async function getData() {
     let result = await fetchData();
     console.log(result);
 }
 
 getData();
+               </code>
             </pre>
         </section>
 
