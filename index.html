@@ -18,37 +18,63 @@
     <title>LearnMe/Home</title>
   </head>
  <body>
- <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <img src="Assets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40">
-        <h2>LearnMe</h2>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="HTML.html" class="nav-link">HTML</a></li>
-        <li><a href="CSS.html" class="nav-link">CSS</a></li>
-        <li><a href="JS.html" class="nav-link">JS</a></li>
-        <li><a href="Php.html" class="nav-link">PHP</a></li>
-        <li><a href="Aboutme.html" class="nav-link">About Me</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
+ <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="Assets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40">
+                <h1>LearnMe</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#php">PHP</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <div class="header-m">
-            <h1>Welcome to LearnMe</h1>
-        </div>
-        <div class="intro-m">
-            <p>Welcome to LearnMe, your one-stop destination for learning the essential programming languages of the web. Our site offers comprehensive tutorials and resources for mastering fornend development, JavaScript, HTML, and CSS. Whether you're a complete beginner or looking to brush up on your skills, our easy-to-follow lessons and hands-on exercises will help you gain a solid understanding of these powerful tools. With LearnMe, you'll be able to create dynamic, interactive websites and web applications with confidence. Start learning today and unleash your full potential as a web developer!</p>
-        </div>
-    </main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Master Web Development</h2>
+                <p>Learn HTML, CSS, JavaScript, and PHP with our comprehensive tutorials</p>
+                <a href="#courses" class="cta-button">Start Learning</a>
+            </div>
+        </section>
 
+        <section id="courses" class="courses container">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>HTML</h3>
+                    <p>Learn the basics of web structure</p>
+                    <a href="#html" class="button">Learn HTML</a>
+                </div>
+                <div class="course-card">
+                    <h3>CSS</h3>
+                    <p>Style your websites beautifully</p>
+                    <a href="#css" class="button">Learn CSS</a>
+                </div>
+                <div class="course-card">
+                    <h3>JavaScript</h3>
+                    <p>Add interactivity to your sites</p>
+                    <a href="#js" class="button">Learn JavaScript</a>
+                </div>
+                <div class="course-card">
+                    <h3>PHP</h3>
+                    <p>Build dynamic web applications</p>
+                    <a href="#php" class="button">Learn PHP</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="row primary">
             <div class="column about">
