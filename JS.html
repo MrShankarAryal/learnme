@@ -13,103 +13,8 @@
     />
     <link rel="stylesheet" href="Asssets/css/style.css" >
     <link rel="stylesheet" href="Asssets/css/footter.css">
-    <style>
-      main{
-        background-color:rgba(42, 12, 70, 0.341);
-        
-      }
-    
-      @keyframes moveRight {
-        from { transform: translateX(-100%); }
-        to { transform: translateX(0); }
-    }
-      
-      .intro-m{
-        padding: 50px 30px 10px 30px;
-        font-size: 130%;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        
-      }
-      main{
-        height: 1500%;                                                 /* IMP*/
-      }
-      .container {
-        display: flex; /* display the divs as a flex container */
-        height: 1500%;                                                 /* IMP*/
-       
-        margin-bottom: 0px;
-    }
-  
-    
-    .left-p {
-       font-size: 18px;
-        width: 15%; /* width of230% */
-        background-color: purple;
-        margin-bottom: 0;            
-    }
-    
-    .right-p {
-
-        font-size: 125%;
-        margin-bottom: 0;
-        width: 85%; /* width of 80% */
-        background-color:rgba(42, 12, 70, 0.341);
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;                                                   /* IMP*/
-    }
-    #first{
-        color: rgb(79, 3, 79);
-        font-size: 10px;
-    }
-    .title{
-        color: purple;
-        padding-top: 20px;
-        padding-left: 40px;
-        font-size: 28px;
-        font-weight: 20px;
-    }
-    .title2{
-        color: darkblue;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 40px;
-        font-size: 28px;
-    }
-    .title3{
-        color: darkolivegreen;
-        
-        padding-bottom: 15px;
-         font-weight: bold;
-        font-size: 24px;
-    }
+     <link rel="stylesheet" href="Asssets/css/content.css">
    
-    #co{
-        font-size: 130%;
-        padding-left: 35%;
-
-    } 
-    .dev{
-        color: red;
-        font-size: 22px;
-    }
-    #palindrome,#check-odd-even,#formb{
-        
-        width: 400px;
-        height: 50px;
-        border-radius: 10px;
-       text-align: center;
-    }
-    #Q{
-       color: aliceblue;
-       text-align: center;
-        text-decoration: none;
-
-    }
-    
-    </style>
-
     <title>LearnMe/CSS</title>
    
 
@@ -137,76 +42,146 @@
         </nav>
     </header>
 
-    <main>
-      <div class="paragraph">
-        <div class="header-h"> JavaScript(JS)</div>
-              <div class="container">
-                <div class="left-p">
-                <ul>
-                   <span id="co">Content</span>
-                   <li>~ Introduction</li><br>
-                   <li>~ Features of JavaScript</li><br>
-                   <li>~ Application of JavaScript</li><br>
-                   <li>~ Checking Palindrome Number</li><br>
-                   <li>~ Checking Odd Even </li><br>
-                 
-                </ul> 
-            </div>
+    <main class="container">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Features of JavaScript</a></li>
+            <li><a href="#section3">Application of JavaScript</a></li>
+            <li><a href="#section4">Checking Palindrome Number</a></li>
+            <li><a href="#section5">Checking Odd Even</a></li>
+            <li><a href="#section6">JavaScript Form Validation</a></li>
+            <li><a href="#section7">Event Handling in JavaScript</a></li>
+            <li><a href="#section8">JavaScript ES6 Features</a></li>
+            <li><a href="#section9">Asynchronous JavaScript (Promises, Async/Await)</a></li>
+        </ul>
+    </aside>
 
-                <div class="right-p"> 
-                    <div class="title">What is JavaScript</div>
-                    JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.<br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although, JavaScript has no connectivity with Java programming language. The name was suggested and provided in the times when Java was gaining popularity in the market. In addition to web browsers, databases such as CouchDB and MongoDB uses JavaScript as their scripting and query language.<br>
-                    <div class="title">Features of JavaScript</div>
-There are following features of JavaScript:<br><br>
+    <div class="content">
+        <section id="section1" class="content-section">
+            <h2>What is JavaScript</h2>
+            <p>JavaScript (JS) is a lightweight, object-oriented programming language used for scripting web pages. It enables dynamic interactivity on websites and was introduced in 1995 with Netscape Navigator. Although its name suggests a connection with Java, JavaScript is entirely distinct from Java. Many modern web applications use JavaScript to provide interactivity without reloading the page. Databases like CouchDB and MongoDB also use it as a query language.</p>
+        </section>
 
-1) All popular web browsers support JavaScript as they provide built-in execution environments.<br>
-2) JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.<br>
-3) JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).<br>
-4) JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.<br>
-5) It is a light-weighted and interpreted language.<br>
-6) It is a case-sensitive language.<br>
-7) JavaScript is supportable in several operating systems including, Windows, macOS, etc.<br>
-8) It provides good control to the users over the web browsers.<br>
-                  
-<div class="title">Application of JavaScript</div>
-JavaScript is used to create interactive websites. It is mainly used for:<br><br>
+        <section id="section2" class="content-section">
+            <h2>Features of JavaScript</h2>
+            <ul>
+                <li>Supported by all popular web browsers</li>
+                <li>Follows C language syntax, making it structured</li>
+                <li>Weakly typed with implicit type casting</li>
+                <li>Object-oriented with prototype-based inheritance</li>
+                <li>Lightweight and interpreted</li>
+                <li>Case-sensitive</li>
+                <li>Supports multiple operating systems like Windows and macOS</li>
+                <li>Provides control over web browsers</li>
+            </ul>
+        </section>
 
-Client-side validation,<br>
-Dynamic drop-down menus,<br>
-mathematical calulation,<br>
-Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),<br>
-Displaying clocks etc.<br>
+        <section id="section3" class="content-section">
+            <h2>Application of JavaScript</h2>
+            <p>JavaScript is used for:</p>
+            <ul>
+                <li>Client-side validation</li>
+                <li>Dynamic drop-down menus</li>
+                <li>Mathematical calculations</li>
+                <li>Displaying pop-up windows and dialog boxes</li>
+                <li>Displaying clocks</li>
+            </ul>
+        </section>
 
-<div class="title2">Checking Palindrome Number</div>
-<div class="title3"> Javascript Code:</div>
-<img src="Asssets/img/code.png" alt="Checking Palindrome Number" width="60%"><br>
-<div class="title3">Output:</div>
-<button id="palindrome">Click to Check Palindrome of Number</button> 
-<script src="Asssets/js/math.js"></script>     
-<div class="title2">Checking Odd Even</div>
-<div class="title3"> Javascript Code:</div>
-<img src="Asssets/img/code2.png" alt="Checking Odd Even" width="60%"><br>
-<div class="title3">Output:</div>
-<button id="check-odd-even">Check Odd Even</button>
-<script src="Asssets/js/oddeven.js"></script>   
-<div class="title">JavaScript Form Validation</div>
-It is important to validate the form submitted by the user because it can have inappropriate values. So, validation is must to authenticate user.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript provides facility to validate the form on the client-side so data processing will be faster than server-side validation. Most of the web developers prefer JavaScript form validation.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Through JavaScript, we can validate name, password, email, date, mobile numbers and more fields.
-<div class="title2">JavaScript Form Validation Example</div>
-Here we validated empty fill , password lenght that must be 6 digit and email and conform password and age greater than 18 <br>
-<img src="Asssets/img/code7.png" alt="Checking Palindrome Number" width="60%"><br>
-<button id="formb"><a id="Q" href="form.html">Click me to look output</a></button>
+        <section id="section4" class="content-section">
+            <h2>Checking Palindrome Number</h2>
+            <h3>JavaScript Code:</h3>
+            <img src="Asssets/img/code.png" alt="Checking Palindrome Number" width="60%">
+            <h3>Output:</h3>
+            <button id="palindrome">Click to Check Palindrome of Number</button>
+            <script src="Asssets/js/math.js"></script>
+        </section>
+
+        <section id="section5" class="content-section">
+            <h2>Checking Odd Even</h2>
+            <h3>JavaScript Code:</h3>
+            <img src="Asssets/img/code2.png" alt="Checking Odd Even" width="60%">
+            <h3>Output:</h3>
+            <button id="check-odd-even">Check Odd Even</button>
+            <script src="Asssets/js/oddeven.js"></script>
+        </section>
+
+        <section id="section6" class="content-section">
+            <h2>JavaScript Form Validation</h2>
+            <p>Validating form inputs is crucial to ensure data accuracy. JavaScript provides client-side validation, which speeds up data processing compared to server-side validation. Developers often use JavaScript to validate fields like name, password, email, date, and mobile numbers.</p>
+            <h3>JavaScript Form Validation Example</h3>
+            <p>We validated fields for empty inputs, password length (minimum 6 digits), email, confirm password, and age (greater than 18).</p>
+            <img src="Asssets/img/code7.png" alt="JavaScript Form Validation Example" width="60%">
+            <button id="formb"><a id="Q" href="form.html">Click me to look output</a></button>
+        </section>
+      
+        <section id="section7" class="content-section">
+            <h2>Event Handling in JavaScript</h2>
+            <p>JavaScript provides an easy way to handle user events like clicks, form submissions, key presses, etc. These events allow developers to create highly interactive user interfaces.</p>
+            <h3>Example of Event Handling:</h3>
+            <pre>
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+            </pre>
+            <h3>Output:</h3>
+            <button id="myButton">Click Me!</button>
+            <script>
+                document.getElementById("myButton").addEventListener("click", function() {
+                    alert("Button clicked!");
+                });
+            </script>
+        </section>
+
+        <section id="section8" class="content-section">
+            <h2>JavaScript ES6 Features</h2>
+            <p>JavaScript ES6 (also known as ECMAScript 2015) introduced several new features to make JavaScript more powerful and concise. Some of the key features include:</p>
+            <ul>
+                <li>Arrow functions for shorter syntax</li>
+                <li>Let and Const for block-scoped variables</li>
+                <li>Template literals for multi-line strings</li>
+                <li>Destructuring assignment for unpacking values</li>
+                <li>Promises for handling asynchronous operations</li>
+                <li>Classes for object-oriented programming</li>
+            </ul>
+        </section>
+
+        <section id="section9" class="content-section">
+            <h2>Asynchronous JavaScript (Promises, Async/Await)</h2>
+            <p>Handling asynchronous operations like API calls or file operations can be difficult using callbacks. JavaScript ES6 introduced Promises, which are objects that represent the eventual completion (or failure) of an asynchronous operation and its resulting value. Later, ES8 introduced async/await for a more synchronous-looking way to handle Promises.</p>
+            <h3>Example with Promises:</h3>
+            <pre>
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data fetched!");
+        }, 2000);
+    });
+}
+
+fetchData().then(result => {
+    console.log(result);
+});
+            </pre>
+            <h3>Example with Async/Await:</h3>
+            <pre>
+async function getData() {
+    let result = await fetchData();
+    console.log(result);
+}
+
+getData();
+            </pre>
+        </section>
 
 
- <div class="dev">We are on develpoing phase soon all notes will be alivable</div>
-
-                </div>
-              </div>
-      </div>
-    </main>
+              <section id="section_dev" class="content-section">
+            <h2>We are in the development phase, and soon all notes will be available.</h2>
+        </section>
+        
+    </div>
+</main>
 
 
     <footer>
