@@ -4,14 +4,13 @@
             --text-color: #333;
             --background-color: #f4f7fc;
         }
-/*body {
-    padding-top: 90px;  Add padding to body to account for fixed header */ 
+body {
+    padding-top: 90px; }
 
 
         main {
             display: flex;
             margin-top: 2rem;
-            padding-top: 90px;
         }
     
         .sidebar {
@@ -41,7 +40,7 @@
             color: var(--primary-color);
         }
     
-        .content {
+        main.content {
             flex: 1;
             padding-left: 2rem;
         }
