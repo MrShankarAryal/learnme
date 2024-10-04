@@ -78,10 +78,7 @@ body {
 /* For mobile devices (up to 600px width) */
 @media (max-width: 600px) {
 
-    
-    .container {
-        flex-direction: column; /* Stack content vertically for better readability */
-    }
+
     
     pre {
         font-size: 12px; /* Make code font smaller on mobile to fit better */
