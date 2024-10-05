@@ -2,304 +2,271 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=l.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="LearnMe offers free tutorials on web development, including HTML, CSS, JavaScript, and PHP. Master front-end and back-end coding skills with hands-on projects and expert guidance.">
-  <meta name="keywords" content="LearnMe, web development tutorials, HTML, CSS, JavaScript, PHP, front-end development, back-end development, coding tutorials, learn programming">
-  <link rel="canonical" href="https://mrshankararyal.github.io/learnme" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Social Media Metadata -->
-  <meta property="og:title" content="LearnMe - Master Web Development" />
-  <meta property="og:description" content="Free tutorials on HTML, CSS, JavaScript, and PHP. Learn to build websites and web applications with hands-on projects." />
-  <meta property="og:url" content="https://mrshankararyal.github.io/learnme/" />
-  <meta name="twitter:title" content="LearnMe - Master Web Development" />
-  <meta name="twitter:description" content="Tutorials on HTML, CSS, JavaScript, and PHP for beginners and advanced users." />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="LearnMe offers free, beginner-friendly tutorials on web development, covering HTML, CSS, JavaScript, and PHP. Master front-end and back-end skills with hands-on projects and expert guidance." />
+    <meta name="keywords" content="LearnMe, web development tutorials, HTML, CSS, JavaScript, PHP, front-end development, back-end development, coding tutorials, learn programming" />
+    <link rel="canonical" href="https://mrshankararyal.github.io/learnme" />
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="LearnMe - Free Web Development Tutorials" />
+    <meta property="og:description" content="Free tutorials on HTML, CSS, JavaScript, and PHP. Learn to build websites and web applications with hands-on projects." />
+    <meta property="og:url" content="https://mrshankararyal.github.io/learnme/" />
+    <meta property="og:image" content="https://mrshankararyal.github.io/learnme/Asssets/images/social-share.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="LearnMe - Free Web Development Tutorials" />
+    <meta name="twitter:description" content="Tutorials on HTML, CSS, JavaScript, and PHP for beginners and advanced users." />
     <meta name="google-site-verification" content="Qt2xA-AmwDRB0vGyADtsxj3ZFEPjeKMVgTjZTkit0UQ" />
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "LearnMe",
-    "url": "https://mrshankararyal.github.io/learnme/",
-    "description": "LearnMe offers free tutorials on web development, including HTML, CSS, JavaScript, and PHP.",
-    "sameAs": [
-
-      "https://www.instagram.com/mrshankararyal",
-   
-    ]
-  }
-  </script>
-    
- <!-- Icon -->
-     <link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
-    <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="Asssets/css/style.css" >
-    <link rel="stylesheet" href="Asssets/css/footter.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <title>LearnMe/Home</title>
-    
-<style>
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-
-:root {
-    --primary-color: #7e2bcc;
-    --secondary-color: #f0e68c;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --card-background: #ffffff;
-}
-
-/* Existing styles remain the same */
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
-}
-
-.features {
-    padding: 6rem 0;
-    background-color: var(--card-background);
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-}
-
-.feature-card {
-    text-align: center;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.feature-icon {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.course-icon {
-    font-size: 4rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.testimonials {
-    padding: 6rem 0;
-    background-color: var(--background-color);
-}
-
-.testimonial-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-}
-
-.testimonial-card {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    padding: 2rem;
-    background-color: var(--card-background);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: 2rem;
-}
-
-.testimonial-card p {
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.testimonial-card h4 {
-    text-align: right;
-    color: var(--primary-color);
-}
-
-@media screen and (min-width: 768px) {
-    .testimonial-card {
-        flex: 0 0 calc(33.333% - 2rem);
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LearnMe",
+      "url": "https://mrshankararyal.github.io/learnme/",
+      "description": "LearnMe offers free tutorials on web development, including HTML, CSS, JavaScript, and PHP.",
+      "sameAs": [
+        "https://www.instagram.com/mrshankararyal"
+      ]
     }
-}
+    </script>
 
+    <!-- Favicon -->
+    <link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
 
-</style>
+    <!-- Fonts and External Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Asssets/css/style.css" />
+    <link rel="stylesheet" href="Asssets/css/footter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>LearnMe - Free Web Development Tutorials</title>
+
+    <style>
+    /* External CSS optimizations */
+    :root {
+        --primary-color: #7e2bcc;
+        --secondary-color: #f0e68c;
+        --text-color: #333;
+        --background-color: #f4f4f4;
+        --card-background: #ffffff;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: var(--primary-color);
+    }
+
+    .features, .testimonials {
+        padding: 6rem 0;
+    }
+
+    .feature-grid, .testimonial-slider, .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+    }
+
+    .feature-card, .testimonial-card, .course-card {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 10px;
+        background-color: var(--card-background);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover, .course-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon, .course-icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    /* Testimonials Styling */
+    .testimonial-card {
+        margin-right: 2rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        .testimonial-card {
+            flex: 0 0 calc(33.333% - 2rem);
+        }
+    }
+    </style>
   </head>
- <body>
- <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40">
-                <h1>LearnMe</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="CSS.html">CSS</a></li>
-                <li><a href="JS.html">JavaScript</a></li>
-                <li><a href="Php.html">PHP</a></li>
-                <li><a href="Aboutme.html">About</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40" />
+          <h1>LearnMe</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="HTML.html">HTML</a></li>
+          <li><a href="CSS.html">CSS</a></li>
+          <li><a href="JS.html">JavaScript</a></li>
+          <li><a href="Php.html">PHP</a></li>
+          <li><a href="Aboutme.html">About</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
-  <main>
-    <section id="home" class="hero">
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
         <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Master Web Development</h2>
-            <p class="animate__animated animate__fadeInUp animate__delay-1s">Learn HTML, CSS, JavaScript, and PHP with our comprehensive tutorials</p>
-            <a href="#courses" class="cta-button animate__animated animate__bounceIn animate__delay-2s">Start Learning</a>
+          <h2 class="animate__animated animate__fadeInDown">Master Web Development</h2>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">Learn HTML, CSS, JavaScript, and PHP with our comprehensive tutorials</p>
+          <a href="#courses" class="cta-button animate__animated animate__bounceIn animate__delay-2s">Start Learning</a>
         </div>
-    </section>
+      </section>
 
-    <section id="features" class="features">
+      <!-- Features Section -->
+      <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <div class="feature-grid">
-                <div class="feature-card animate__animated animate__fadeInLeft">
-                    <i class="fas fa-graduation-cap feature-icon"></i>
-                    <h3>Expert Instructors</h3>
-                    <p>Learn from industry professionals with years of experience</p>
-                </div>
-                <div class="feature-card animate__animated animate__fadeInUp">
-                    <i class="fas fa-code feature-icon"></i>
-                    <h3>Hands-on Projects</h3>
-                    <p>Apply your skills with real-world projects and exercises</p>
-                </div>
-                <div class="feature-card animate__animated animate__fadeInRight">
-                    <i class="fas fa-users feature-icon"></i>
-                    <h3>Community Support</h3>
-                    <p>Join our vibrant community of learners and developers</p>
-                </div>
+          <h2 class="section-title">Why Learn Web Development with LearnMe?</h2>
+          <div class="feature-grid">
+            <div class="feature-card animate__animated animate__fadeInLeft">
+              <i class="fas fa-graduation-cap feature-icon"></i>
+              <h3>Expert Instructors</h3>
+              <p>Learn from industry professionals with years of experience</p>
             </div>
+            <div class="feature-card animate__animated animate__fadeInUp">
+              <i class="fas fa-code feature-icon"></i>
+              <h3>Hands-on Projects</h3>
+              <p>Apply your skills with real-world projects and exercises</p>
+            </div>
+            <div class="feature-card animate__animated animate__fadeInRight">
+              <i class="fas fa-users feature-icon"></i>
+              <h3>Community Support</h3>
+              <p>Join our vibrant community of learners and developers</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="courses" class="courses">
+      <!-- Courses Section -->
+      <section id="courses" class="courses">
         <div class="container">
-            <h2 class="section-title">Our Courses</h2>
-            <div class="course-grid">
-                <div class="course-card animate__animated animate__zoomIn">
-                    <i class="fab fa-html5 course-icon"></i>
-                    <h3>HTML</h3>
-                    <p>Learn the basics of web structure</p>
-                    <a href="HTML.html" class="button">Learn HTML</a>
-                </div>
-                <div class="course-card animate__animated animate__zoomIn animate__delay-1s">
-                    <i class="fab fa-css3-alt course-icon"></i>
-                    <h3>CSS</h3>
-                    <p>Style your websites beautifully</p>
-                    <a href="CSS.html" class="button">Learn CSS</a>
-                </div>
-                <div class="course-card animate__animated animate__zoomIn animate__delay-2s">
-                    <i class="fab fa-js course-icon"></i>
-                    <h3>JavaScript</h3>
-                    <p>Add interactivity to your sites</p>
-                    <a href="JS.html" class="button">Learn JavaScript</a>
-                </div>
-                <div class="course-card animate__animated animate__zoomIn animate__delay-3s">
-                    <i class="fab fa-php course-icon"></i>
-                    <h3>PHP</h3>
-                    <p>Build dynamic web applications</p>
-                    <a href="Php.html" class="button">Learn PHP</a>
-                </div>
+          <h2 class="section-title">Our Courses</h2>
+          <div class="course-grid">
+            <div class="course-card animate__animated animate__zoomIn">
+              <i class="fab fa-html5 course-icon"></i>
+              <h3>HTML</h3>
+              <p>Learn the basics of web structure</p>
+              <a href="HTML.html" class="button">Learn HTML</a>
             </div>
+            <div class="course-card animate__animated animate__zoomIn animate__delay-1s">
+              <i class="fab fa-css3-alt course-icon"></i>
+              <h3>CSS</h3>
+              <p>Style your websites beautifully</p>
+              <a href="CSS.html" class="button">Learn CSS</a>
+            </div>
+            <div class="course-card animate__animated animate__zoomIn animate__delay-2s">
+              <i class="fab fa-js course-icon"></i>
+              <h3>JavaScript</h3>
+              <p>Add interactivity to your sites</p>
+              <a href="JS.html" class="button">Learn JavaScript</a>
+            </div>
+            <div class="course-card animate__animated animate__zoomIn animate__delay-3s">
+              <i class="fab fa-php course-icon"></i>
+              <h3>PHP</h3>
+              <p>Build dynamic web applications</p>
+              <a href="Php.html" class="button">Learn PHP</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="testimonials" class="testimonials">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2 class="section-title">What Our Students Say</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-card">
-                    <p>"LearnMe helped me transition into a new career as a web developer. The courses are comprehensive and easy to follow."</p>
-                    <h4>- Sarah J.</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The hands-on projects really helped me understand complex concepts. I'm now confident in my coding skills."</p>
-                    <h4>- Mike T.</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The community support is amazing. I always get help when I'm stuck on a problem."</p>
-                    <h4>- Emily R.</h4>
-                </div>
+          <h2 class="section-title">What Our Students Say</h2>
+          <div class="testimonial-slider">
+            <div class="testimonial-card">
+              <p>"LearnMe helped me transition into a new career as a web developer. The courses are comprehensive and easy to follow."</p>
+              <h4>- Sarah J.</h4>
             </div>
+            <div class="testimonial-card">
+              <p>"The hands-on projects really helped me understand complex concepts. I'm now confident in my coding skills."</p>
+              <h4>- Mike T.</h4>
+            </div>
+            <div class="testimonial-card">
+              <p>"The community support is amazing. I always get help when I'm stuck on a problem."</p>
+              <h4>- Emily R.</h4>
+            </div>
+          </div>
         </div>
-    </section>
-</main>
-   
-   <footer>
-        <div class="row primary">
-            <div class="column about">
-                <h3>LearnMe</h3>
-                <p>Hi, I am Shankar Aryal, a computer science student. This is a simple demonstration of a website where you can learn about me, check some simple mathematical problems, learn about form validation, and explore fornend webdevelopment.</p>
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-youtube-square"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp-square"></i></a>
-                </div>
-            </div>
-            <div class="column links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="Php.html">PHP</a></li>
-                    <li><a href="form.html">Form</a></li>
-                    <li><a href="Cprogramming.html">C Programming</a></li>
-                    <li><a href="JS.html">JS</a></li>
-                </ul>
-            </div>
-            <div class="column subscribe">
-                <h3>For Queries</h3>
-                <div>
-                    <input type="text" name="feedback" placeholder="Write your problems and feedback here">
-                    <button type="submit">Submit</button>
-                </div>
-            </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3>LearnMe</h3>
+          <p>Hi, I am Shankar Aryal, a computer science student. This website is a simple demonstration where you can learn web development with tutorials on HTML, CSS, JavaScript, and PHP.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+          </div>
         </div>
-        <div class="row copyright">
-            <div class="footer-menu">
-                <a href="index.html">Home</a>
-                <a href="HTML.html">HTML</a>
-                <a href="CSS.html">CSS</a>
-                <a href="JS.html">JS</a>
-                <a href="Php.html">PHP</a>
-                <a href="Aboutme.html">About me</a>
-                <a href="form.html">Form</a>
-            </div>
-            <p>&copy; 2024 Shankar Aryal. All rights reserved.</p>
+        <div class="column links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Php.html">PHP</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="Cprogramming.html">C Programming</a></li>
+            <li><a href="JS.html">JavaScript</a></li>
+          </ul>
         </div>
+        <div class="column subscribe">
+          <h3>For Queries</h3>
+          <div>
+            <input type="text" name="feedback" placeholder="Write your problems and feedback here" />
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="footer-menu">
+          <a href="index.html">Home</a>
+          <a href="HTML.html">HTML</a>
+          <a href="CSS.html">CSS</a>
+          <a href="JS.html">JavaScript</a>
+          <a href="Php.html">PHP</a>
+          <a href="Aboutme.html">About me</a>
+          <a href="form.html">Form</a>
+        </div>
+        <p>&copy; 2024 Shankar Aryal. All rights reserved.</p>
+      </div>
     </footer>
 
-    <script src="Asssets/js/nav.js"></script>
-</body>
+    <!-- JS for Navigation -->
+    <script src="Asssets/js/nav.js" defer></script>
+  </body>
 </html>
