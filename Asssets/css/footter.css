@@ -1,15 +1,9 @@
+/* footer.css */
 footer {
-    padding-top: 20px;
-    background-color: rgb(126, 43, 204);
+    background-color: var(--primary-color);
     color: white;
     font-size: 16px;
-}
-
-footer * {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+    padding-top: 3rem;
 }
 
 .row {
@@ -31,7 +25,7 @@ footer * {
     min-height: 10em;
 }
 
-h3 {
+footer h3 {
     width: 100%;
     text-align: left;
     color: white;
@@ -55,11 +49,11 @@ footer li:not(:first-child) {
 footer ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
 footer ul li a:hover {
-    color: #f0e68c;
+    color: var(--secondary-color);
 }
 
 .about p {
@@ -68,8 +62,8 @@ footer ul li a:hover {
     margin: 0;
 }
 
-input,
-button {
+footer input,
+footer button {
     font-size: 1em;
     padding: 1em;
     width: 100%;
@@ -77,19 +71,20 @@ button {
     margin-bottom: 5px;
 }
 
-button {
-    background-color: #f0e68c;
-    color: rgb(126, 43, 204);
+footer button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
 }
 
-button:hover {
+footer button:hover {
     background-color: #fff;
+    transform: translateY(-3px);
 }
 
-div.social {
+.social {
     display: flex;
     justify-content: space-around;
     font-size: 2.4em;
@@ -99,15 +94,16 @@ div.social {
 
 .social i {
     color: white;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
 .social i:hover {
-    color: #f0e68c;
+    color: var(--secondary-color);
+    transform: scale(1.1);
 }
 
 .copyright {
-    padding: 0.3em 1em;
+    padding: 2em 1em;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -120,11 +116,11 @@ div.social {
     color: #cfd2d6;
     padding: 6px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
 .footer-menu a:hover {
-    color: #f0e68c;
+    color: var(--secondary-color);
 }
 
 .copyright p {
@@ -132,27 +128,23 @@ div.social {
     text-align: right;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 850px) {
     .row.primary {
         grid-template-columns: 1fr;
     }
-
     .column {
         padding: 0 1em;
         margin-bottom: 1em;
     }
-
-    .footer-menu, .copyright p {
+    .footer-menu,
+    .copyright p {
         text-align: center;
         float: none;
     }
-
     .footer-menu {
         margin-bottom: 10px;
     }
-
     .copyright {
-        padding: 1em;
+        padding: 2em;
     }
 }
