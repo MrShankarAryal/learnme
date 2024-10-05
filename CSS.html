@@ -2,236 +2,219 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=l.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn CSS with this beginner-friendly tutorial. Explore CSS styles, selectors, the box model, flexbox, grid, and more to build visually appealing web pages." />
+    <meta name="keywords" content="CSS tutorial, Learn CSS, CSS for beginners, CSS selectors, CSS box model, flexbox, grid layout, web development, Cascading Style Sheets" />
+    <link rel="canonical" href="https://mrshankararyal.github.io/learnme/CSS.html" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="LearnMe - CSS Tutorial for Beginners" />
+    <meta property="og:description" content="A complete guide to learning CSS. Understand how to style web pages, create layouts, and use powerful CSS features like flexbox and grid." />
+    <meta property="og:url" content="https://mrshankararyal.github.io/learnme/CSS.html" />
+    <meta property="og:image" content="https://mrshankararyal.github.io/learnme/Asssets/img/CSS-share.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="LearnMe - CSS Tutorial for Beginners" />
+    <meta name="twitter:description" content="Learn CSS step-by-step. Understand CSS selectors, styling techniques, layout models, and more." />
+
     <!-- Icon -->
     <link rel="icon" href="Asssets/icon/favicon.ico" type="image/x-icon" />
-    <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="Asssets/css/style.css" >
-    <link rel="stylesheet" href="Asssets/css/footter.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;l,300;l,400;l,500&display=swap" rel="stylesheet" />
     
-    <link rel="stylesheet" href="Asssets/css/content.css">
-    
-    <title>LearnMe/CSS</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="Asssets/css/style.css" />
+    <link rel="stylesheet" href="Asssets/css/footter.css" />
+    <link rel="stylesheet" href="Asssets/css/content.css" />
+
+    <title>LearnMe - CSS Tutorial</title>
   </head>
   <body>
-   <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40">
-                <h1>LearnMe</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="HTML.html">HTML</a></li>
-                <li><a href="CSS.html">CSS</a></li>
-                <li><a href="JS.html">JavaScript</a></li>
-                <li><a href="Php.html">PHP</a></li>
-                <li><a href="Aboutme.html">About</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-<main class="container">
-    <aside class="sidebar">
-        <ul>
-            <li><a href="#section1">Introduction</a></li>
-            <li><a href="#section2">Inline CSS</a></li>
-            <li><a href="#section3">Internal CSS</a></li>
-            <li><a href="#section4">External CSS</a></li>
-            <li><a href="#section5">CSS Selectors</a></li>
-            <li><a href="#section6">CSS Box Model</a></li>
-            <li><a href="#section7">CSS Flexbox</a></li>
-            <li><a href="#section8">CSS Grid</a></li>
+    <!-- Header Section -->
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <img src="Asssets/icon/favicon.ico" alt="LearnMe Logo" width="40" height="40" />
+          <h1>LearnMe</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="HTML.html">HTML</a></li>
+          <li><a href="CSS.html">CSS</a></li>
+          <li><a href="JS.html">JavaScript</a></li>
+          <li><a href="Php.html">PHP</a></li>
+          <li><a href="Aboutme.html">About</a></li>
         </ul>
-    </aside>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-    <div class="content">
+    <!-- Main Content Section -->
+    <main class="container">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#section1">Introduction</a></li>
+          <li><a href="#section2">Inline CSS</a></li>
+          <li><a href="#section3">Internal CSS</a></li>
+          <li><a href="#section4">External CSS</a></li>
+          <li><a href="#section5">CSS Selectors</a></li>
+          <li><a href="#section6">CSS Box Model</a></li>
+          <li><a href="#section7">CSS Flexbox</a></li>
+          <li><a href="#section8">CSS Grid</a></li>
+        </ul>
+      </aside>
+
+      <div class="content">
         <!-- Section 1: Introduction -->
         <section id="section1" class="content-section">
-            <h2>Introduction</h2>
-            <p>CSS stands for Cascading Style Sheets, and it is used to control the look and feel of web pages. With CSS, you can modify the visual presentation of HTML elements, such as setting text color, size, font, margins, padding, positions, backgrounds, and more.</p>
-            <p>There are three main ways to apply CSS to HTML:</p>
-            <ul>
-                <li>Inline CSS</li>
-                <li>Internal CSS</li>
-                <li>External CSS</li>
-            </ul>
+          <h2>Introduction</h2>
+          <p>CSS (Cascading Style Sheets) is used to control the look and layout of web pages. It allows you to set colors, fonts, positioning, margins, and more to enhance your HTML structure.</p>
+          <p>There are three main ways to apply CSS to HTML:</p>
+          <ul>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+          </ul>
         </section>
 
         <!-- Section 2: Inline CSS -->
         <section id="section2" class="content-section">
-            <h2>Inline CSS</h2>
-            <p>Inline CSS is applied directly to HTML elements using the <code>style</code> attribute.</p>
-            <p>It is generally used for quick styling changes or when you need to apply a unique style to a single element.</p>
-            <p>Syntax:</p>
-            <pre><code>&lt;element style="...style rules..."&gt;Content&lt;/element&gt;</code></pre>
-            <p>Example:</p>
-            <pre><code>&lt;h1 style="color: red;"&gt;This is a red heading&lt;/h1&gt;</code></pre>
-            <p>Note: It's not recommended to use inline CSS for large projects because it can make code harder to manage.</p>
+          <h2>Inline CSS</h2>
+          <p>Inline CSS applies directly to HTML elements using the <code>style</code> attribute.</p>
+          <pre><code>&lt;element style="color: red;"&gt;Content&lt;/element&gt;</code></pre>
         </section>
 
         <!-- Section 3: Internal CSS -->
         <section id="section3" class="content-section">
-            <h2>Internal CSS</h2>
-            <p>Internal CSS is written within a single HTML document, inside the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section. It is useful when styling needs to be applied to one specific page.</p>
-            <p>Syntax:</p>
-            <pre><code>&lt;style&gt;
-selector {
-  property: value;
-  property: value;
+          <h2>Internal CSS</h2>
+          <p>Internal CSS is written within the HTML file inside the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.</p>
+          <pre><code>&lt;style&gt;
+body {
+  font-family: 'Rubik', sans-serif;
+  color: black;
 }
 &lt;/style&gt;</code></pre>
-            <p>Example:</p>
-            <img src="Asssets/img/code4.png" alt="Internal CSS example" width="40%">
         </section>
 
         <!-- Section 4: External CSS -->
         <section id="section4" class="content-section">
-            <h2>External CSS</h2>
-            <p>External CSS is stored in an external file, which is linked to the HTML document using the <code>&lt;link&gt;</code> tag. This method is ideal for large projects where you want to apply the same styles across multiple pages.</p>
-            <p>Syntax:</p>
-            <pre><code>&lt;head&gt;
-&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
-&lt;/head&gt;</code></pre>
-            <p>Example:</p>
-            <p>Home.html:</p>
-            <img src="Asssets/img/code5.png" alt="Home HTML example" width="40%">
-            <p>style.css:</p>
-            <img src="Asssets/img/code6.png" alt="CSS example" width="40%">
+          <h2>External CSS</h2>
+          <p>External CSS is written in a separate file, and linked to your HTML document using the <code>&lt;link&gt;</code> tag.</p>
+          <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
         </section>
 
         <!-- Section 5: CSS Selectors -->
         <section id="section5" class="content-section">
-            <h2>CSS Selectors</h2>
-            <p>CSS selectors are used to target HTML elements that you want to style. There are various types of selectors:</p>
-            <ul>
-                <li><strong>Element Selector</strong> - targets all elements of a specific type (e.g., <code>p</code>, <code>h1</code>).</li>
-                <li><strong>ID Selector</strong> - targets a single element with a specific ID using the <code>#</code> symbol (e.g., <code>#myDiv</code>).</li>
-                <li><strong>Class Selector</strong> - targets elements with a specific class using the <code>.</code> symbol (e.g., <code>.myClass</code>).</li>
-                <li><strong>Attribute Selector</strong> - targets elements with specific attributes (e.g., <code>[type="text"]</code>).</li>
-            </ul>
+          <h2>CSS Selectors</h2>
+          <p>CSS selectors target specific HTML elements for styling. There are different types of selectors:</p>
+          <ul>
+            <li><strong>Element Selector</strong> - targets elements like <code>p</code> or <code>h1</code></li>
+            <li><strong>ID Selector</strong> - targets elements by their unique ID, e.g., <code>#header</code></li>
+            <li><strong>Class Selector</strong> - targets elements by class, e.g., <code>.container</code></li>
+          </ul>
         </section>
 
         <!-- Section 6: CSS Box Model -->
         <section id="section6" class="content-section">
-            <h2>CSS Box Model</h2>
-            <p>The CSS Box Model is a fundamental concept that defines how elements are structured in CSS. It consists of:</p>
-            <ul>
-                <li><strong>Content</strong> - The content of the element (e.g., text, image).</li>
-                <li><strong>Padding</strong> - The space between the content and the border.</li>
-                <li><strong>Border</strong> - The edge around the padding and content.</li>
-                <li><strong>Margin</strong> - The space outside the border.</li>
-            </ul>
-            <p>Example:</p>
-            <img src="Asssets/img/box-model.png" alt="CSS Box Model" width="50%">
+          <h2>CSS Box Model</h2>
+          <p>The CSS Box Model defines how elements are structured. It consists of:</p>
+          <ul>
+            <li><strong>Content</strong> - The content inside the element</li>
+            <li><strong>Padding</strong> - Space between the content and border</li>
+            <li><strong>Border</strong> - A border surrounding the padding</li>
+            <li><strong>Margin</strong> - The space outside the border</li>
+          </ul>
+          <img src="Asssets/img/box-model.png" alt="CSS Box Model" width="50%" />
         </section>
 
         <!-- Section 7: CSS Flexbox -->
         <section id="section7" class="content-section">
-            <h2>CSS Flexbox</h2>
-            <p>CSS Flexbox is a layout model that provides an efficient way to arrange items in a container. It allows items to align and distribute space dynamically within a flex container.</p>
-            <ul>
-                <li><strong>display: flex;</strong> - Defines a flex container.</li>
-                <li><strong>justify-content</strong> - Aligns flex items along the main axis (e.g., <code>justify-content: center;</code>).</li>
-                <li><strong>align-items</strong> - Aligns flex items along the cross axis (e.g., <code>align-items: stretch;</code>).</li>
-            </ul>
+          <h2>CSS Flexbox</h2>
+          <p>Flexbox is a CSS layout model that helps you design flexible and responsive layouts.</p>
+          <ul>
+            <li><strong>display: flex;</strong> - Defines a flex container</li>
+            <li><strong>justify-content</strong> - Aligns items along the main axis</li>
+            <li><strong>align-items</strong> - Aligns items along the cross axis</li>
+          </ul>
         </section>
 
         <!-- Section 8: CSS Grid -->
         <section id="section8" class="content-section">
-            <h2>CSS Grid</h2>
-            <p>CSS Grid is another layout model that provides a two-dimensional grid-based layout system. It is ideal for building complex, responsive layouts.</p>
-            <ul>
-                <li><strong>display: grid;</strong> - Defines a grid container.</li>
-                <li><strong>grid-template-columns</strong> - Specifies the columns in the grid (e.g., <code>grid-template-columns: repeat(3, 1fr);</code>).</li>
-                <li><strong>grid-gap</strong> - Defines the spacing between grid items (e.g., <code>grid-gap: 10px;</code>).</li>
-            </ul>
-            <p>Example:</p>
-            <img src="Asssets/img/grid-layout.png" alt="CSS Grid Layout" width="50%">
+          <h2>CSS Grid</h2>
+          <p>CSS Grid allows for two-dimensional layouts with rows and columns.</p>
+          <ul>
+            <li><strong>display: grid;</strong> - Defines a grid container</li>
+            <li><strong>grid-template-columns</strong> - Specifies column structure</li>
+            <li><strong>grid-gap</strong> - Adds space between grid items</li>
+          </ul>
         </section>
 
+
         <!-- Development Message -->
-        <div class="dev">We are in the development phase. All notes will be available soon.</div>
-    </div>
-</main>
+        <section id="section8" class="content-section">
+            <div class="dev">We are in the development phase. More notes will be available soon.</div>
+          </section>
+       
+      </div>
+    </main>
 
-
-
+    <!-- Footer Section -->
     <footer>
       <div class="row primary">
         <div class="column about">
-      
-        <h3>Learn me</h3>
-      
-         <p>
-            Hi , I am Shankar Aryal computer science student this is simple demonstration of website where you can know about me ,check some simple mathematical problems and about form validation and learn abouts C programing.
-        </p>
-      
-        <div class="social">
-          <i class="fa-brands fa-facebook-square"></i>
-          <i class="fa-brands fa-instagram-square"></i>
-          <i class="fa-brands fa-twitter-square"></i>
-          <i class="fa-brands fa-youtube-square"></i>
-          <i class="fa-brands fa-whatsapp-square"></i>
+          <h3>LearnMe</h3>
+          <p>Hi, I am Shankar Aryal, a computer science student. This is a demonstration website where you can learn CSS and other web development skills.</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+          </div>
+        </div>
+
+        <div class="column links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Php.html">PHP</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="Cprogramming.html">C Programming</a></li>
+            <li><a href="JS.html">JavaScript</a></li>
+          </ul>
+        </div>
+
+        <div class="column subscribe">
+          <h3>For Queries</h3>
+          <div>
+            <input type="text" name="feeds" placeholder="Write your problems and feedback here" />
+            <button>Submit</button>
+          </div>
         </div>
       </div>
-  
-      <div class="column links" id="xv">
-        <h3>Some Links</h3>
-         <ul id="I">
-          <li>
-           <a href="Php.html">Php</a>
-          </li>
-          <li >
-           <a href="form.html">Form</a>
-          </li>
-          <li >
-          <a href="Cprograming.html"></a>
-          </li>
-          <li >
-          <a href="JS.html">JS</a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="column subscribe" id="v">
-        <h3>For Querries </h3>
-        <div>
-          <input type="text" name="feeds" width="30%"placeholder="Write your problems and feedbacks here" />
-          <button>Submit</button>
-         </div>
-      
-      </div>
-      
-      </div>
-      
+
       <div class="row copyright">
         <div class="footer-menu">
           <a href="index.html">Home</a>
           <a href="HTML.html">HTML</a>
           <a href="CSS.html">CSS</a>
-          <a href="JS.html">JS</a>
+          <a href="JS.html">JavaScript</a>
           <a href="Php.html">PHP</a>
-          <a href="about.html">About me</a>
+          <a href="Aboutme.html">About Me</a>
           <a href="form.html">Form</a>
-    
-      
         </div>
-         <p>Copyright &copy; 202l Shankar Aryal  ❤️</p>
+        <p>&copy; 2024 Shankar Aryal. All rights reserved.</p>
       </div>
-      </footer>
-  
-    
-          <script src="Asssets/js/nav.js"></script>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="Asssets/js/nav.js" defer></script>
   </body>
 </html>
